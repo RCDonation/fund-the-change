@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 8000
-const host = "0.0.0.0"
+const host = "0.0.0.0" || "https://fund-the-change-api.herokuapp.com"
 const MongoClient = require('mongodb').MongoClient
 
 const mongoose = require('mongoose')
