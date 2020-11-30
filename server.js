@@ -5,6 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 8000
+const host = "0.0.0.0"
 const MongoClient = require('mongodb').MongoClient
 
 const mongoose = require('mongoose')
@@ -54,4 +55,4 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static("client/build"))
 }
 
-app.listen(PORT, console.log(`server is running on ${PORT}`));
+app.listen(PORT, host, console.log(`server is running on ${PORT}`));
