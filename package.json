@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run install-client && npm run build",
+    "build": "npm run install-client && npm start",
     "install-client": "cd client && npm install",
     "dev": "cd client && nodemon server.js"
   },
