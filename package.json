@@ -9,7 +9,6 @@
   "scripts": {
     "build": "npm run install-client && npm run build",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm start",
     "dev": "cd client && nodemon server.js"
   },
   "keywords": [],
